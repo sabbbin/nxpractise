@@ -17,7 +17,9 @@
     "paths": {
       "@my-org/api-interface": ["libs/api-interface/src/index.ts"],
       "@my-org/frontend": ["apps/frontend/src/index.ts"],
-      "@my-org/knexjs": ["libs/knexjs/src/index.ts"]
+      "@my-org/knexjs": ["libs/knexjs/src/index.ts"],
+      "@my-org/notification": ["libs/notification/src/index.ts"],
+      "@my-org/user": ["libs/user/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

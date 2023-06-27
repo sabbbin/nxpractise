@@ -4,7 +4,7 @@ import * as admin from 'firebase-admin';
 
 @Injectable()
 export class AppService {
-  constructor(@Inject('knexProvider') private readonly knex: Knex) {}
+  // constructor(@Inject('knexProvider') private readonly knex: Knex) {}
   getData(): { message: string } {
     return { message: 'Hello API' };
   }

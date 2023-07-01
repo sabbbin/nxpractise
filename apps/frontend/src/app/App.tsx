@@ -2,6 +2,7 @@ import { messaging } from './firebase.js';
 import { useEffect } from 'react';
 
 import { getToken, onMessage } from 'firebase/messaging';
+import { GoogleLoginFrontend } from '@my-org/google-login-frontend';
 
 export function App() {
   async function requestPermissionq() {
@@ -25,6 +26,7 @@ export function App() {
   return (
     <div>
       <h5> hdloe </h5>
+      <GoogleLoginFrontend />
     </div>
   );
 }

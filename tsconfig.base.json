@@ -15,11 +15,15 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-org/=libs/fcm-module": ["libs/=libs/fcm-module/src/index.ts"],
       "@my-org/api-interface": ["libs/api-interface/src/index.ts"],
       "@my-org/fcm-module": ["libs/fcm-module/src/index.ts"],
       "@my-org/frontend": ["apps/frontend/src/index.ts"],
+      "@my-org/google-login": ["libs/google-login/src/index.ts"],
+      "@my-org/google-login-frontend": [
+        "libs/google-login-frontend/src/index.ts"
+      ],
       "@my-org/knexjs": ["libs/knexjs/src/index.ts"],
+      "@my-org/nodemailer": ["libs/nodemailer/src/index.ts"],
       "@my-org/notification": ["libs/notification/src/index.ts"],
       "@my-org/user": ["libs/user/src/index.ts"]
     }

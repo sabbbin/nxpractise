@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import { getToken, onMessage } from 'firebase/messaging';
 import { GoogleLoginFrontend } from '@my-org/google-login-frontend';
+import Form from './formProgress/form.js';
 
 export function App() {
   async function requestPermissionq() {
@@ -21,12 +22,13 @@ export function App() {
   }
 
   useEffect(() => {
-    requestPermissionq();
+    // requestPermissionq();
   }, []);
   return (
     <div>
       <h5> hdloe </h5>
-      <GoogleLoginFrontend />
+      <Form />
+      {/* <GoogleLoginFrontend /> */}
     </div>
   );
 }

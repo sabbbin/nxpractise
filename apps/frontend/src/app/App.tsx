@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { getToken, onMessage } from 'firebase/messaging';
 import { GoogleLoginFrontend } from '@my-org/google-login-frontend';
 import Form from './formProgress/form.js';
+import { handleSubscription } from './registerSW.js';
 
 export function App() {
   async function requestPermissionq() {
@@ -23,6 +24,7 @@ export function App() {
 
   useEffect(() => {
     // requestPermissionq();
+    handleSubscription();
   }, []);
   return (
     <div>

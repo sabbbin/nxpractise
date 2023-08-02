@@ -6,9 +6,11 @@ import { InjectKnex, KnexjsModule } from '@my-org/knexjs';
 import knex, { Knex } from 'knex';
 import { FcmModuleModule } from '@my-org/fcm-module';
 import { NodemailerModule } from '@my-org/nodemailer';
+import { ClaimbasedModule } from '@my-org/claimbased';
 
 @Module({
   imports: [
+    ClaimbasedModule,
     FcmModuleModule.forRoot({
       firebaseSpecsPath: './firebase-admin-sdk.json',
     }),

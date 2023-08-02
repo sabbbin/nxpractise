@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@my-org/api-interface": ["libs/api-interface/src/index.ts"],
+      "@my-org/claimbased": ["libs/claimbased/src/index.ts"],
       "@my-org/error-boundary": ["libs/error-boundary/src/index.ts"],
       "@my-org/fcm-module": ["libs/fcm-module/src/index.ts"],
       "@my-org/frontend": ["apps/frontend/src/index.ts"],
